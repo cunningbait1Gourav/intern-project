@@ -32,13 +32,16 @@ bttnsin.addEventListener('click',()=>{
 })
 
 bttnsup.addEventListener('click',()=>{
-	if(mailsup.value==''){
+	if(userName.value==''){
+		alert('Enter your userName')
+	}
+	else if(mailsup.value==''){
 		alert('Enter Email Address')
 	}
 	else if(passup.value==''){
 		alert('Enter your password')
 	}
-	else if(userName.value==''){
-		alert('Enter your userName')
+	else if(passup.value.length<=8){
+		alert('Length of your password must be greater than 8 characters')
 	}
 })
